@@ -1,0 +1,2 @@
+word ¤translation¤§synonym§
+word2 ¤translation of word2¤     §synonym§      §synonym2§

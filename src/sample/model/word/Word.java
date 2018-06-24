@@ -1,14 +1,14 @@
-package sample.model;
+package sample.model.word;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Word implements IWord {
+class Word implements IWord {
     private String word;
     private List<String> synonyms;
     private List<String> definitions;
 
-    public Word(String word) {
+    protected Word(String word) {
         this.word = word;
         this.synonyms = new ArrayList<>();
         this.definitions = new ArrayList<>();

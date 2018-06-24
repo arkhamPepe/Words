@@ -1,0 +1,8 @@
+.header-text {
+    -fx-font-size: 14px;
+}
+
+#menu-button {
+    -fx-font-size: 30px;
+    -fx-padding: -8 5;
+}
