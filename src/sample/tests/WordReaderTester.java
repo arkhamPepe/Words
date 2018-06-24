@@ -22,11 +22,11 @@ public class WordReaderTester {
         for (IWord word : words){
             System.out.println(word.getWord());
 
-            System.out.println("\n\tDefinitions:");
+            System.out.println("\tDefinitions:");
             for (String definition : word.getDefinitions()){
                 System.out.println("\t\t" + definition);
             }
-            System.out.println("\n\tSynonyms:");
+            System.out.println("\tSynonyms:");
             for (String synonym : word.getSynonyms()){
                 System.out.println("\t\t" + synonym);
             }

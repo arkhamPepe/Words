@@ -7,6 +7,7 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import sample.model.TextFileReader;
 import sample.tests.WordReaderTester;
+import sample.tests.WordWriterTester;
 
 public class Main extends Application {
     private static final String WORDS_PATH = System.getProperty("user.dir") + "\\src\\sample\\docs\\words.txt";
@@ -24,7 +25,7 @@ public class Main extends Application {
         TextFileReader reader = new TextFileReader(WORDS_PATH);
 
         WordReaderTester.test();
-
+        WordWriterTester.test();
 
         //launch(args);
     }

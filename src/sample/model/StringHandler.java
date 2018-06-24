@@ -5,6 +5,11 @@ import java.util.List;
 
 public class StringHandler {
 
+    /** Returns the first word of a String */
+    public static String getFirstWord(String s){
+        return s.substring(0, StringHandler.getFirstIndexOfChar(' ', s));
+    }
+
     /** Returns the index of first occurring character equal to argument c */
     public static int getFirstIndexOfChar(char c, String s){
         for (int i = 0; i < s.length(); i++){
