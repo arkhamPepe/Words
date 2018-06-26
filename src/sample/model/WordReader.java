@@ -23,6 +23,9 @@ public class WordReader {
         loadWords();
         return words;
     }
+    public static List<String> getRows(){
+        return reader.getRows();
+    }
 
     /** Reads all rows in a word-file and extracts all definitions and synonyms for a word.
      *  All words are stored in a List */

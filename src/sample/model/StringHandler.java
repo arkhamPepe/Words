@@ -7,7 +7,12 @@ public class StringHandler {
 
     /** Returns the first word of a String */
     public static String getFirstWord(String s){
-        return s.substring(0, StringHandler.getFirstIndexOfChar(' ', s));
+        int firstIndexOfSpace = StringHandler.getFirstIndexOfChar(' ', s);
+
+        if (firstIndexOfSpace == -1)
+            return s;
+        else
+            return s.substring(0, firstIndexOfSpace);
     }
 
     /** Returns the index of first occurring character equal to argument c */

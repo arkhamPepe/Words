@@ -14,14 +14,12 @@ import java.util.List;
 public class TextFileWriter {
     private BufferedWriter bw;
     private FileWriter fw;
-    private List<String> rows;
 
     public TextFileWriter(String path){
         this(path, true);
     }
     public TextFileWriter(String path, boolean append){
         setFileWriter(path, append);
-        rows = new ArrayList<>();
     }
 
     public void setFileWriter(String path, boolean append) {
@@ -59,5 +57,9 @@ public class TextFileWriter {
                 ex.printStackTrace();
             }
         }
+    }
+
+    public void editRow(String word){
+
     }
 }

@@ -6,6 +6,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import sample.model.TextFileReader;
+import sample.model.WordReader;
 import sample.tests.WordReaderTester;
 import sample.tests.WordWriterTester;
 
@@ -24,8 +25,10 @@ public class Main extends Application {
     public static void main(String[] args) {
         TextFileReader reader = new TextFileReader(WORDS_PATH);
 
-        WordReaderTester.test();
+        //WordReaderTester.test();
         WordWriterTester.test();
+        //WordReaderTester.test();
+
 
         //launch(args);
     }

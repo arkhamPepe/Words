@@ -8,6 +8,8 @@ import java.util.List;
 
 public class WordReaderTester {
     public static void test(){
+        WordReader.setWordFile("temp");
+        printWords();
         printWordsAndDef();
     }
 

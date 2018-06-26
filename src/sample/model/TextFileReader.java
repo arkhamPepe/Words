@@ -21,20 +21,6 @@ public class TextFileReader {
         rows = new ArrayList<>();
     }
 
-    // Returns defensive copy of rows: List
-    public List<String> getRows(){
-        List<String> copy = new ArrayList<>();
-
-        for(int i = 0; i < rows.size(); i++){
-            copy.add(rows.get(i));
-        }
-
-        return copy;
-    }
-    public BufferedReader getBr() {
-        return br;
-    }
-
     public void loadTextRows(){
         String str;
         rows.clear();
@@ -48,12 +34,29 @@ public class TextFileReader {
         } catch(Exception e){}
     }
 
+    /* GETTERS */
+    /** Returns defensive copy of List rows */
+    public List<String> getRows(){
+        loadTextRows();
+
+        List<String> copy = new ArrayList<>();
+
+        for(int i = 0; i < rows.size(); i++){
+            copy.add(rows.get(i));
+        }
+
+        return copy;
+    }
+    public BufferedReader getBr() {
+        return br;
+    }
+
+    /* SETTERS */
     public void setFileReader(String path) {
         try {
             br = new BufferedReader(new FileReader(path));
         } catch(Exception e){}
     }
-
     public void setFileReader(FileReader fr){
         try {
             br = new BufferedReader(fr);
